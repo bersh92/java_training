@@ -10,6 +10,26 @@ import static java.util.Arrays.asList;
 
 public class JavaTraining {
 
+    private int id;         //will be available only in this class
+
+    protected int number;   //will be available in class which extend this
+
+    public int value;       //will be available in everywhere 
+
+    int n;                  //will be available in package with this class
+
+    private  int num = 8;
+
+
+    public int getNum(){    //getter method
+        System.out.println("number is:" + num);
+        return num;
+    }
+
+    public void setNum(int newValue){  //setter method
+        num = newValue;
+        System.out.println("number is:" + num);
+    }
 
     public void test_for_loop() {
         int[] arr = {1, 3, 4, 6, 4, 7, 8, 6, 4};
