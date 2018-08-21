@@ -18,6 +18,15 @@ public class JavaTraining {
 
     int n;                  //will be available in package with this class
 
+    int constructor;
+
+    public JavaTraining(){
+    }
+
+    public JavaTraining(int b){
+        constructor = b;
+    }
+
     private  int num = 8;
 
 
@@ -159,6 +168,14 @@ public class JavaTraining {
         obj1.put("3", "zxc");
         String value = obj1.get("2");
         System.out.println(value);
+    }
+
+    public static void testOverload(){
+        System.out.println("without parameters");
+    }
+
+    public static void testOverload(String v){
+        System.out.println("with parameters:" + v);
     }
 }
 
