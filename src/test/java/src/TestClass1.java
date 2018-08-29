@@ -1,14 +1,12 @@
 package src;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
-import static java.util.Arrays.asList;
 
 
-public class JavaTraining {
+public class TestClass1 extends TestClass0 {
 
     private int id;         //will be available only in this class
 
@@ -20,15 +18,14 @@ public class JavaTraining {
 
     int constructor;
 
-    public JavaTraining(){
+    private int num = 8;
+
+    public TestClass1(){
     }
 
-    public JavaTraining(int b){
+    public TestClass1(int b){
         constructor = b;
     }
-
-    private  int num = 8;
-
 
     public int getNum(){    //getter method
         System.out.println("number is:" + num);
@@ -126,14 +123,14 @@ public class JavaTraining {
     public static void test_parametrs(int a, int b) {
         int c = a + b;
         System.out.println("Result is: " + c);
-        JavaTraining.test_contains();
+        TestClass1.test_contains();
     }
 
     public static void test_create_array(int length, String type_of_values) {
         int id[] = new int[length];
         if (type_of_values.equalsIgnoreCase("random")) {
             for (int i = 0; i < id.length; i++) {
-                id[i] = JavaTraining.random_number();
+                id[i] = TestClass1.random_number();
             }
         } else {
             int b = 0;
@@ -178,8 +175,3 @@ public class JavaTraining {
         System.out.println("with parameters:" + v);
     }
 }
-
-    /*for (int elem: arr) {
-        //System.out.println(arr[elem]);
-    }
-}*/
