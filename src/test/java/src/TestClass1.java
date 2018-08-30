@@ -20,26 +20,25 @@ public class TestClass1 extends TestClass0 {
 
     private int num = 8;
 
-    public TestClass1(){
+    public TestClass1() {
     }
 
-    public TestClass1(int b){
+    public TestClass1(int b) {
         constructor = b;
     }
 
-    public int getNum(){    //getter method
+    public int getNum() {    //getter method
         System.out.println("number is:" + num);
         return num;
     }
 
-    public void setNum(int newValue){  //setter method
+    public void setNum(int newValue) {  //setter method
         num = newValue;
         System.out.println("number is:" + num);
     }
 
     public void test_for_loop() {
         int[] arr = {1, 3, 4, 6, 4, 7, 8, 6, 4};
-
         for (int elem : arr) {
             System.out.println(elem);
         }
@@ -167,11 +166,11 @@ public class TestClass1 extends TestClass0 {
         System.out.println(value);
     }
 
-    public static void testOverload(){
+    public static void testOverload() {
         System.out.println("without parameters");
     }
 
-    public static void testOverload(String v){
+    public static void testOverload(String v) {
         System.out.println("with parameters:" + v);
     }
 }
