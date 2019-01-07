@@ -67,7 +67,6 @@ public class TestClass1 extends TestClass0 {
 
     public static void test_if() {
         String browser = "chrome";
-
         if (browser.equalsIgnoreCase("Chrome")) {
             System.out.println("Browser is Chrome");
         } else if (browser.equalsIgnoreCase("Firefox")) {
@@ -107,7 +106,6 @@ public class TestClass1 extends TestClass0 {
         String actual = "Hello";
         boolean status = expected.contains(actual);
         System.out.println("Status is " + status);
-
     }
 
     public static void test_split() {

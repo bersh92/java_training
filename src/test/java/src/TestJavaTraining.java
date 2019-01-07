@@ -1,10 +1,13 @@
 package src;
 
+import org.testng.annotations.Test;
+
 public class TestJavaTraining extends TestClass1 {
     TestJavaTraining testObj;
     TestClass2 <Integer> testObj1;
     TestClass3 testObj2;
 
+    @Test
     public void main() {
         testObj = new TestJavaTraining();
         testObj1 = new TestClass2 <> (); // Generic
